@@ -1,9 +1,9 @@
 (function() {
-    function HomeCtrl() {
+    function HomeCtrl(Room) {
         
     }
 
     angular
         .module('chatterGator')
-        .controller('HomeCtrl', [HomeCtrl]);
+        .controller('HomeCtrl', ['Room' , HomeCtrl]);
 })();
