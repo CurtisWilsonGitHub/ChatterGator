@@ -1,0 +1,42 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+        
+}
+
+
+
+.rooms{
+    background-color: #424242;
+    border: 1px;
+    border-color:dimgray;
+    border-style: solid;
+    color: beige;
+    float: left;
+    grid-column: 1/2;
+    margin: 20px 0 20px 20px;
+    overflow: auto;
+    text-align: center;
+
+}
+
+.messages{
+    border: 1px;
+    border-color:dimgray;
+    border-style: solid;
+    margin: 20px 20px  20px 0px ;
+    float: left;
+    background-color:#F5F5F5;
+    
+    grid-column: 2/4;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 15% 85%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: grey;
+}   
