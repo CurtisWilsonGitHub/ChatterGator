@@ -1,6 +1,16 @@
 <div class="mdl-grid wrapper">
     
-    <div class="mdl-cell mdl-cell--3-col rooms ">Rooms</div>
+    <div class="mdl-cell mdl-cell--3-col rooms ">
+        <p>rooms</p>
+        <br>
+        <ul ng-repeat = " room in home.rooms ">
+            <li> {{room.$value}} </li>
+            
+        </ul>
+        
+    
+    
+    </div>
     <div class="mdl-cell mdl-cell--9-col messages ">Messages</div>
   
 </div>
