@@ -7,17 +7,20 @@
         });
         
         $stateProvider
+            
             .state('home', {
-            url: '/',
-            controller: 'HomeCtrl as home',
-            templateUrl: '/templates/home.html'
-        });
+                url: '/',
+                controller: 'HomeCtrl as home',
+                templateUrl: '/templates/home.html'
+            });
+            
+        
         
        
     }
     
     
     angular
-        .module('chatterGator', ['ui.router', 'firebase'])
+        .module('chatterGator', ['ui.router', 'firebase', 'ui.bootstrap'])
         .config(config);
 })();

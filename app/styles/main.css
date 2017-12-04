@@ -2,23 +2,19 @@
 *{
     padding: 0px;
     margin: 0px;
+    font-family: "Roboto", Times, Serif;
         
 }
 
 
-
-.rooms{
-    background-color: #424242;
-    border: 1px;
-    border-color:dimgray;
-    border-style: solid;
-    color: beige;
-    float: left;
-    grid-column: 1/2;
-    margin: 20px 0 20px 20px;
-    overflow: auto;
-    text-align: center;
-
+.areaBtn{
+    
+    background-color: #C0DDD1;
+    box-shadow: 2px 4px 7px 0px rgba(0,0,0,1);
+    color: #1F3D1F;
+    width: 20em;
+    height: 3em;
+    
 }
 
 .messages{
@@ -32,11 +28,50 @@
     grid-column: 2/4;
 }
 
+.rooms{
+    background-color: #1F3D1F;
+    border: 1px;
+    border-color:dimgray;
+    border-style: solid;
+    color: beige;
+    float: left;
+    grid-column: 1/2;
+    margin: 20px 0 20px 20px;
+    overflow: auto;
+    text-align: center;
+
+}
+
+.roomModal{
+    background-color: #1F3D1F;
+    border: 1px;
+    border-color:dimgray;
+    border-style: solid;
+    color: beige;
+    float: left;
+    grid-column: 1/2;
+    margin: 20px 0 20px 20px;
+    overflow: auto;
+    text-align: center;
+
+}
+
 .wrapper{
     display: grid;
     grid-template-columns: 15% 85%;
     position: absolute;
     height: 100%;
     width: 100%;
-    background: grey;
+    background-color: darkseagreen;
 }   
+
+.top-nav{
+    margin: 10px 0 0 0;
+}
+
+.top-nav p{
+    font-size: 25pt;
+    text-shadow: 2px 4px 7px rgba(0, 0, 0, 1);
+    color: #C0DDD1;
+}
+

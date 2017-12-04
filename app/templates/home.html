@@ -1,7 +1,11 @@
-<div class="mdl-grid wrapper">
+<div class="wrapper">
     
-    <div class="mdl-cell mdl-cell--3-col rooms ">
-        <p>rooms</p>
+    <div class="rooms ">
+        <div class = "top-nav">
+            <p>ChatterArea
+                <button class="btn areaBtn" ng-click="home.newRoomCreate()"> <h1>New Room</h1> </button>
+            </p>
+        </div>
         <br>
         <ul ng-repeat = " room in home.rooms ">
             <li> {{room.$value}} </li>
@@ -11,6 +15,6 @@
     
     
     </div>
-    <div class="mdl-cell mdl-cell--9-col messages ">Messages</div>
+    <div class="messages ">Messages</div>
   
 </div>
