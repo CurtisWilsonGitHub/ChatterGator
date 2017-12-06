@@ -3,9 +3,12 @@
         
         this.rooms = Room.all;
         
+        $uibModal.animationsEnabled = true; 
+        
         this.newRoomCreate = function(size){
             
             var modalInstance = $uibModal.open({
+                animation: $uibModal.animationsEnabled,
                 ariaLabelledBy: 'modal-title',
                 ariaDescribedBy: 'modal-body',
                 templateUrl: '/templates/modal.html',

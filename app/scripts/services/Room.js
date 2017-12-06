@@ -8,13 +8,12 @@
         
         
         
-    Room.add = function(room){
+    Room.addRoom = function(roomName){
         
-        var list = $firebaseArray(ref);
-        list.$add({ foo: "bar" }).then(function(ref) {
+        rooms.$add(roomName).then(function(ref) {
             var id = ref.key;
-              console.log("added record with id " + id);
-              list.$indexFor(id); // returns location in the array
+              console.log("added record for room:" + roomName + "with id " + id);
+              rooms.$indexFor(id); // returns location in the array
         });
     }
     

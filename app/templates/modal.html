@@ -1,11 +1,17 @@
-<div class="modal">
-    <div class="modal-content">
-        <h3 class="modal-title" id="modal-title">Create new room </h3>
-        <form class="modal-form" ng-submit="modal.addData()">
-            <div class="status-bar">{{modal.statusBar}}</div>
-            <input type="text" class="room-input" value="" ng-model="modal.inputData"><br>
-            <input type="button" class="modal-button" value="Cancel" ng-click="modal.cancel()">
-            <input type="submit" class="modal-button create" value="Create Room">
-        </form>
-    </div>
+<div class = "modal-header">
+    <h3> Create New Room</h3>
 </div>
+<div class = "modal-body">
+
+    <form ng-submit="modal.submitRoom()">
+    <input type="text" ng-model="modal.newRoomName">
+    <div class = "modal-footer new-room-value">
+
+        <input type = "button" value = "Cancel" ng-click = "modal.cancel()">
+        <input type = "submit" value = "New Room">
+
+    </div>
+    </form>
+
+</div>
+
