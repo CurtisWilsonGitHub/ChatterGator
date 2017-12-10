@@ -12,7 +12,7 @@
         
         rooms.$add(roomName).then(function(ref) {
             var id = ref.key;
-              console.log("added record for room:" + roomName + "with id " + id);
+              console.log("added record for room:" + roomName + " with id " + id);
               rooms.$indexFor(id); // returns location in the array
         });
     }

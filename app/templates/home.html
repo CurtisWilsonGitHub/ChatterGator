@@ -1,20 +1,34 @@
 <div class="wrapper">
     
-    <div class="rooms ">
+    <div class="roomsBox ">
         <div class = "top-nav">
             <p>ChatterArea
                 <button class="areaBtn" ng-click="home.newRoomCreate()"> <h4>New Room</h4> </button>
             </p>
         </div>
         <br>
-        <ul ng-repeat = " room in home.rooms ">
-            <li> {{room.$value}} </li>
+        <ul class = "roomsUl">
+            <li class ="roomsList" ng-repeat = " room in home.rooms " ng-click = " home.setCurrentRoom(room) "> <h4> {{room.$value}} </h4></li> 
             
         </ul>
         
     
     
     </div>
-    <div class="messages ">Messages</div>
+   
+    <div class="messages">  
+        
+        
+    
+        <ul class="messageList" ng-repeat="messages in home.messages">
+            <li class>
+                <p class = "messagesUser"> {{messages.username}} </p>
+                <p class ="messagesTime"> {{messages.sentAt}}</p>
+                <div style="clear:both"></div>
+                <p class =" messagesContent"> {{messages.content}} </p> 
+                
+            </li>
+        </ul>
+    </div>
   
 </div>

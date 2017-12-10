@@ -1,9 +1,11 @@
 (function() {
-    function HomeCtrl(Room, $uibModal) {
+    function HomeCtrl(Room, $uibModal, Message) {
         
         this.rooms = Room.all;
+        this.currentRoom = '';
         
         $uibModal.animationsEnabled = true; 
+        
         
         this.newRoomCreate = function(size){
             
@@ -19,9 +21,15 @@
             
         };
         
+        this.setCurrentRoom = function(room){
+            this.messages = Message.getRoomById(room.$id);
+            console.log(room.$id);
+            
+        }
+        
     }
 
     angular
         .module('chatterGator')
-        .controller('HomeCtrl', ['Room', '$uibModal' , HomeCtrl]);
+        .controller('HomeCtrl', ['Room', '$uibModal', 'Message', HomeCtrl]);
 })();

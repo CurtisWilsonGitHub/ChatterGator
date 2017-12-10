@@ -27,7 +27,20 @@
     grid-column: 2/4;
 }
 
-.rooms{
+.messagesUser{
+    font-weight: bold;
+    float: left;
+}
+
+.messagesContent{
+    
+}
+
+.messagesTime{
+    float: right;
+}
+
+.roomsBox{
     background-color: #1F3D1F;
     border: 1px;
     border-color:dimgray;
@@ -39,6 +52,26 @@
     overflow: auto;
     text-align: center;
 
+}
+
+.roomsUl{
+    
+    
+    list-style-type: none;
+    text-align: left;
+    text-indent: 10px;
+}
+
+
+.messageList:nth-child(even) { 
+    
+    background-color: #e6ffe6; 
+}
+
+.roomsList:hover{
+    background-color: #C0DDD1;
+    color: #1F3D1F;
+    cursor: pointer;
 }
 
 .roomModal{
