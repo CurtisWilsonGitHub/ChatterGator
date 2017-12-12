@@ -18,6 +18,7 @@
         });
     }
     
+    console.log(rooms);
     return Room;
 }
 
