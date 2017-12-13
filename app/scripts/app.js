@@ -21,6 +21,6 @@
     
     
     angular
-        .module('chatterGator', ['ui.router', 'firebase', 'ui.bootstrap'])
+        .module('chatterGator', ['ui.router', 'firebase', 'ui.bootstrap', 'ngCookies'])
         .config(config);
 })();
