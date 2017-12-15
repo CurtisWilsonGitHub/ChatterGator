@@ -107,6 +107,9 @@
     color: #C0DDD1;
 }
 
+.newRoomText{
+    width: 100%;
+}
 
 .userNameSubmit{
     width: 100%;
@@ -114,4 +117,12 @@
 
 .newUserText{
     width:100%;
+}
+
+.newRoomButton{
+    width: 25%
+}
+
+.modalBody{
+    margin: 0 0 0 0;
 }

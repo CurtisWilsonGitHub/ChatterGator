@@ -1,14 +1,15 @@
 <div class = "modal-header">
     <h3> Create New Room</h3>
 </div>
-<div class = "modal-body">
-
+<div class = "modal-body modalBody">
+    
+    <h5> Enter a room name </h5>
     <form ng-submit="modal.submitRoom()">
-    <input type="text" ng-model="modal.newRoomName">
+    <input class = "newRoomText" type="text" ng-model="modal.newRoomName">
     <div class = "modal-footer new-room-value">
 
-        <input type = "button" value = "Cancel" ng-click = "modal.cancel()">
-        <input type = "submit" value = "New Room">
+        <input class = "newRoomButton" type = "button" value = "Cancel" ng-click = "modal.cancel()">
+        <input class = "newRoomButton" type = "submit" value = "New Room">
 
     </div>
     </form>

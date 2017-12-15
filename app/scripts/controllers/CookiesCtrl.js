@@ -8,6 +8,7 @@
                 animation: $uibModal.animationsEnabled,
                 ariaLabelledBy: 'modal-title',
                 ariaDescribedBy: 'modal-body',
+                backdrop: 'static',
                 templateUrl: '/templates/userNameModal.html',
                 controller: 'NewUserModalCtrl',
                 controllerAs: 'newusermodal',
