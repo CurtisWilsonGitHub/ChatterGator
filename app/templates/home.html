@@ -30,5 +30,12 @@
             </li>
         </ul>
     </div>
-  
+    
+    <div class="messageInputBox">
+        <form ng-submit="home.sendMessage()">
+            <input class = "messageTextField" type = "text" ng-model = "home.message">
+            <input class = "messageButton" type = "submit" value = "Send">
+            
+        </form>
+  </div>
 </div>
