@@ -35,7 +35,25 @@
 }
 
 .messageTextField{
-    width: 90%;
+    
+    height: 95%;
+    width: 95%;
+    resize: none;
+    padding: 15px 10px; 
+
+    
+}
+
+.messageInputForm{
+    height: 95%;
+    resize: none;
+}
+
+.messageButton{
+    background-color: #C0DDD1;
+    box-shadow: 2px 4px 7px 0px rgba(0,0,0,1);
+    width: 4%;
+    height: 5%;
 }
 
 .messagesUser{

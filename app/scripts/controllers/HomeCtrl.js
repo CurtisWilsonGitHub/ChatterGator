@@ -2,7 +2,7 @@
     function HomeCtrl(Room, $uibModal, Message, $cookies) {
         
         this.rooms = Room.all;
-        this.currentRoom = '';
+        this.currentRoom = undefined;
         
         $uibModal.animationsEnabled = true; 
         
@@ -30,9 +30,11 @@
         
         this.sendMessage = function (){
             
-            var time = "1:00";
-            console.log(this.message + "1");
-            Message.send(this.message, this.currentRoom,time, $cookies.get('ChatterGatorCurrentUser'));
+            if(typeof(this.currentRoom) != "undefined"){
+                var time = "1:00";
+                console.log(this.message + "1");
+                Message.send(this.message, this.currentRoom,time, $cookies.get('ChatterGatorCurrentUser'));
+            }else{alert("Please select a room.")}
         }
         
     }
